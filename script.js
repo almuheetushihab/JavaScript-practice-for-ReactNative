@@ -329,11 +329,45 @@
 
 // Multiple ‘?’ operator
 
-let age = prompt('age?', 18);
+// let age = prompt('age?', 18);
 
-let message = (age < 3) ? 'Hi, baby!' :
-  (age < 18) ? 'Hello!' :
-  (age < 100) ? 'Greetings!' :
-  'What an unusual age!';
+// let message = (age < 3) ? 'Hi, baby!' :
+//   (age < 18) ? 'Hello!' :
+//   (age < 100) ? 'Greetings!' :
+//   'What an unusual age!';
 
-alert( message );
+// alert( message );
+
+
+// Loops: while and for
+// The while loop executes a block of code as long as a specified condition is true.
+// let i = 0;
+// while (i < 13) {
+//   console.log(`i is ${i}`);
+//   i++;
+// }
+
+// let userName = "";
+
+// while (userName === "") {
+//   userName = prompt("Enter your name:", "");
+// }
+
+//  console.log(`Hello, ${userName}!`);
+
+
+let loggedIn = false;
+let userName;
+let password;
+
+while (!loggedIn) {
+  userName = prompt("Enter your username:", "");
+  password = prompt("Enter your password:", "");
+
+  if (userName === "admin" && password === "1234") {
+    loggedIn = true;
+    console.log(`Welcome, ${userName}!`);
+  } else {
+    console.log("Invalid username or password. Please try again.");
+  }
+}
