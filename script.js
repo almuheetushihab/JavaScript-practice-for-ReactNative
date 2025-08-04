@@ -246,21 +246,94 @@
 // console.log(result); // 11 (the result of the last expression, 5 + 6, is returned)
 
 // Comparison Operators
-let a4 = 5, b4 = 3;
-console.log(a4 > b4); // true (greater than)
-console.log(a4 < b4); // false (less than)
-console.log(a4 >= b4); // true (greater than or equal to)
-console.log(a4 <= b4); // false (less than or equal to)
-console.log(a4 == b4); // false (equal to)
-console.log(a4 != b4); // true (not equal to)
-console.log(a4 === b4); // false (strict equality, checks value and type)
-console.log(a4 !== b4); // true (strict inequality, checks value and type)
+// let a4 = 5, b4 = 3;
+// console.log(a4 > b4); // true (greater than)
+// console.log(a4 < b4); // false (less than)
+// console.log(a4 >= b4); // true (greater than or equal to)
+// console.log(a4 <= b4); // false (less than or equal to)
+// console.log(a4 == b4); // false (equal to)
+// console.log(a4 != b4); // true (not equal to)
+// console.log(a4 === b4); // false (strict equality, checks value and type)
+// console.log(a4 !== b4); // true (strict inequality, checks value and type)
 
-let year = prompt('In which year was ECMA Script-2025 specification published?', '');
+// let year = prompt('In which year was ECMA Script-2025 specification published?', '');
 
-if (year == 2025) alert( 'You are right!' );
+// if (year == 2025) alert( 'You are right!' );
 
-if (year == 2015) {
-  alert( "That's correct!" );
-  alert( "You're so smart!" );
-}
+// if (year == 2015) {
+//   alert( "That's correct!" );
+//   alert( "You're so smart!" );
+// }
+
+// Falsy values in JavaScript
+// Falsy values are values that evaluate to false in a boolean context.
+// let falsyValue1 = 0; // 0 is falsy
+// let falsyValue2 = ''; // empty string is falsy
+// let falsyValue3 = null; // null is falsy
+// let falsyValue4 = undefined; // undefined is falsy
+// let falsyValue5 = NaN; // NaN (Not a Number) is falsy
+// let falsyValue6 = false; // false is falsy
+// // Truthy values in JavaScript
+// // Truthy values are values that evaluate to true in a boolean context.
+// let truthyValue1 = 1; // non-zero number is truthy
+// let truthyValue2 = 'Hello'; // non-empty string is truthy
+// let truthyValue3 = {}; // empty object is truthy
+// let truthyValue4 = []; // empty array is truthy
+// let truthyValue5 = function() {}; // non-null function is truthy
+// // Examples of falsy values
+// if (falsyValue1) {
+//   alert("This won't be shown, because 0 is falsy.");
+// }
+// if (falsyValue2) {
+//   alert("This won't be shown, because an empty string is falsy.");
+// }
+// if (falsyValue3) {
+//   alert("This won't be shown, because null is falsy.");
+// }
+// if (falsyValue4) {
+//   alert("This won't be shown, because undefined is falsy.");
+// }
+// if (falsyValue5) {
+//   alert("This won't be shown, because NaN is falsy.");
+// }
+// if (falsyValue6) {
+//   alert("This won't be shown, because false is falsy.");
+// }
+
+
+// let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
+
+// if (year == 2015) {
+//   alert( 'You guessed it right!' );
+// } else {
+//   alert( 'How can you be so wrong?' );
+// }
+
+
+// let accessAllowed;
+// let age = prompt('How old are you?', '');
+
+// if (age > 18) {
+//   accessAllowed = true;
+// } else {
+//   accessAllowed = false;
+// }
+
+// alert(accessAllowed);
+
+// The code above prompts the user to guess the year of the ECMAScript-2015 specification.
+// If the user enters 2015, it alerts "You guessed it right!".
+// If the user enters any other year, it alerts "How can you be so wrong?".
+// This is a simple example of using the prompt function to get user input and conditional statements to check the input.
+// Note: The prompt function is used to get user input, and the alert function is used to display messages.
+
+// Multiple ‘?’ operator
+
+let age = prompt('age?', 18);
+
+let message = (age < 3) ? 'Hi, baby!' :
+  (age < 18) ? 'Hello!' :
+  (age < 100) ? 'Greetings!' :
+  'What an unusual age!';
+
+alert( message );
